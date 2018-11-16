@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.virgo.lmsapp.panel">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:id="@+id/imageView"
+        android:background="@drawable/bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/d_book"
+        android:layout_alignEnd="@+id/d_book"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <TextView
+        android:text="Welcome To Admin Panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/tv2"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/a_book"
+        android:layout_alignStart="@+id/a_book" />
+
+    <Button
+        android:text="Delete Book"
+        android:layout_width="150dp"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_height="150dp"
+        android:id="@+id/d_book"
+        android:onClick="onClick"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <Button
+        android:text="Add Member"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="onClick"
+        android:id="@+id/reg"
+        android:layout_below="@+id/a_book"
+        android:layout_alignLeft="@+id/a_book"
+        android:layout_alignStart="@+id/a_book" />
+
+    <Button
+        android:text="View Members"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/v_mem"
+        style="@android:style/Widget.Holo.Button"
+        android:onClick="onClick"
+        android:layout_below="@+id/d_book"
+        android:layout_alignLeft="@+id/d_book"
+        android:layout_alignStart="@+id/d_book" />
+
+    <Button
+        android:text="Sign-Out"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/s_out"
+        style="@android:style/Widget.Holo.Button"
+        android:onClick="onClick"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_below="@+id/v_mem"
+        android:layout_alignLeft="@+id/v_mem"
+        android:layout_alignStart="@+id/v_mem" />
+
+    <Button
+        android:text="Delete Member"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/d_mem"
+        style="@android:style/Widget.Holo.Button"
+        android:onClick="onClick"
+        android:layout_below="@+id/reg"
+        android:layout_alignLeft="@+id/reg"
+        android:layout_alignStart="@+id/reg" />
+
+    <Button
+        android:text="Add Books"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/a_book"
+        android:onClick="onClick"
+        android:elevation="0dp"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+</RelativeLayout>
